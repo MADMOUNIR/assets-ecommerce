@@ -1,0 +1,129 @@
+<!-- header start -->
+<header>
+    <!-- header top start -->
+    <div class="header-top theme1 bg-dark py-15">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7 order-last order-md-first">
+                    <div class="static-info text-center text-md-left">
+                        <p class="text-white">Join our showroom and get <span class="theme-color">50 % off</span> ! Coupon code : <span class="theme-color">Junno50</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5">
+                    <nav class="navbar-top pb-2 pb-md-0 position-relative">
+                        <ul class="d-flex justify-content-center justify-content-md-end align-items-center">
+                            <li>
+                                <a href="#" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting <i class="ion ion-ios-arrow-down"></i></a>
+                                <ul class="topnav-submenu dropdown-menu" aria-labelledby="dropdown1">
+                                    <li><a href="#">My account</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD $ <i class="ion ion-ios-arrow-down"></i> </a>
+
+                            </li>
+                            <li class="english">
+                                <a href="#" id="dropdown3" class="pr-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/img/logo/us-flag.jpg" alt="us flag"> English
+                                    <i class="ion ion-ios-arrow-down"></i>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header top end -->
+    <!-- header-middle satrt -->
+    <div class="header-middle pt-20">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-lg-2 order-first">
+                    <div class="logo text-center text-sm-left mb-30 mb-sm-0">
+                        <a href="index.html"><img src="assets/img/logo/logo-dark.jpg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-5 col-xl-4">
+                    <!-- search-form end -->
+                    <div class="d-flex align-items-center justify-content-center justify-content-sm-end">
+                        <div class="media static-media mr-50 d-none d-lg-flex">
+                            <img class="mr-3 align-self-center" src="assets/img/icon/1.png" alt="icon">
+                            <div class="media-body">
+                                <div class="phone">
+                                    <span class="text-muted">Call us:</span>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:(+33)752152560" class="text-dark">(+33)752152560</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- static-media end -->
+                        <div class="cart-block-links theme1">
+                            <ul class="d-flex">
+
+                                <li class="mr-0 cart-block position-relative">
+                                    <a class="offcanvas-toggle" routerLink="/card">
+                                        <span class="position-relative">
+                                            <i class="icon-bag"></i>
+                                            <span class="badge cbdg1">{{ cardTotalLength }}</span>
+                                        </span>
+                                        <span class="cart-total position-relative" *ngIf="cardTotalCost">${{ cardTotalCost }}</span>
+                                    </a>
+                                </li>
+                                <!-- cart block end -->
+                            </ul>
+                        </div>
+                        <div class="mobile-menu-toggle theme1 d-lg-none">
+                            <a href="#offcanvas-mobile-menu" class="offcanvas-toggle">
+                                <svg viewbox="0 0 800 600">
+                                    <path
+                                        d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                                        id="top"></path>
+                                    <path d="M300,320 L540,320" id="middle"></path>
+                                    <path
+                                        d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                                        id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318)">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-6 order-lg-first">
+                    <div class="search-form pt-30 pt-lg-0">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-middle end -->
+
+    <!-- header bottom start -->
+    <!-- header bottom start -->
+    <nav class="header-bottom theme1 d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 offset-lg-2 d-flex flex-wrap align-items-center position-relative">
+
+                    <ul class="main-menu d-flex">
+
+                        <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+                        <li routerLinkActive="active"><a routerLink="/shop">Shop</a></li>
+                        <li routerLinkActive="active"><a>Category</a></li>
+                        <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
+                        <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+                        <li routerLinkActive="active"><a routerLink="/register">register</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header bottom end -->
+</header>
