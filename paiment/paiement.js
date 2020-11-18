@@ -1,4 +1,4 @@
-this.payPalConfig = {
+{
     currency: 'EUR',
     clientId: '',
     // tslint:disable-next-line: no-angle-bracket-type-assertion
