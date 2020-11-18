@@ -21,7 +21,7 @@
                 category: 'SHOPPING FEMME',
                 unit_amount: {
                     currency_code: 'EUR',
-                    value: price,
+                    value: 20.0,
                 },
             }]
         }]
