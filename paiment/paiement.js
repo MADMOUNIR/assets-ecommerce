@@ -1,16 +1,16 @@
 {
-    currency: 'EUR',
+    currency: '',
     clientId: '',
     // tslint:disable-next-line: no-angle-bracket-type-assertion
     createOrderOnClient: (data) => < ICreateOrderRequest > {
         intent: 'CAPTURE',
         purchase_units: [{
             amount: {
-                currency_code: 'EUR',
+                currency_code: '',
                 value: 20.0,
                 breakdown: {
                     item_total: {
-                        currency_code: 'EUR',
+                        currency_code: '',
                         value: 20.0
                     },
                 }
@@ -20,7 +20,7 @@
                 quantity: '1',
                 category: 'SHOPPING FEMME',
                 unit_amount: {
-                    currency_code: 'EUR',
+                    currency_code: '',
                     value: 20.0,
                 },
             }]
