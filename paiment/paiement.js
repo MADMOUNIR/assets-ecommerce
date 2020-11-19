@@ -2,10 +2,11 @@ initConfig(): void {
 
         const price = this.price;
         const currency = this.currency;
+        const clientId = this.id_client;
 
         this.payPalConfig = {
-            currency: this.currency,
-            clientId: this.id_client,
+            currency: currency,
+            clientId: id_client,
             // tslint:disable-next-line: no-angle-bracket-type-assertion
             createOrderOnClient: (data) => < ICreateOrderRequest > {
                 intent: 'CAPTURE',
